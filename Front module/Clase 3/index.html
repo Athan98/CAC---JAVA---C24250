@@ -1,0 +1,115 @@
+<!-- 
+CLASE 3
+En el siguiente práctico desarrollaremos
+1- Etiquetas links para crear un favicon
+2- Cambiamos la etiqueta del logo <h1> por una etiqueta <a> que es lo mas correcto en diseño
+2- Dividimos nuestro diseño de pagina en la zona principal con <main> y el pie de página <footer>
+4- Dentro del main dividimos la página en 3 secciones con etiqueta <section> y las identificaremos con el atributo id
+5- Diseñamos la portada principal con etiquetas h1 h2 y un boton correctamente diseñados
+6- Dis
+6- Diseñamos las secciones busquedas (el formulario diseñaremos la clase que viene), tendencias y mas aclamadas en principio con tablas luego cambiaremos
+7- Cargamos el footer con 3 enlaces
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaC-Movies, peliculas y series</title>
+    <!--Zona del Favicon-->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html">🎞 CaC-Movies 🎞</a>
+        <ul type="square">
+          <!--Enlace interno-->
+          <li>
+            <a
+              href="#popular"
+              title="Haz click aquí para ir a la sección de tendencias"
+              >Tendencias</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="./templates/register.html"
+              title="Haz click aquí para registrarte"
+              >Registrarse</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developer.themoviedb.org/docs"
+              target="_blank"
+              title="Haz click para ir a la API"
+              >API Movie</a
+            >
+          </li>
+          <li>
+            <a href="#" title="Haz click aquí para iniciar sesión"
+              >Iniciar sesión</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Parte principal de la pagina-->
+    <main>
+      <!--Seccion de portada-->
+      <section id="banner" class="">
+        <div>
+          <!--Titular-->
+          <h1>Peliculas y series ilimitadas en un solo lugar</h1>
+          <h2>
+            Disfruta donde quieras.
+            <br />
+            Cancela en cualquier momento.
+          </h2>
+          <a href="./templates/register.html">Registrate</a>
+        </div>
+      </section>
+      <!--Seccion de busqueda de peliculas-->
+      <section id="search" class="">
+        <h3>¿Qué estás buscando para ver?</h3>
+        <!--Formulario de búsqueda-->
+      </section>
+      <!--Seccion "Mas populares"-->
+      <section id="popular" class="">
+        <div>
+          <h3>Las tendencias de Hoy</h3>
+          <div id="list-popular">
+            <table>
+              <!--Fila 1-->
+              <tr>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+              </tr>
+              <!--Fila 2-->
+              <tr>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+                <td><a href="#"><div class="movie"><img src="https://picsum.photos/200" alt="Imagen random" title="Haz click para mas info"></div></a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!--Seccion "Mas aclamadas"-->
+      <section id="top-rated" class=""></section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
